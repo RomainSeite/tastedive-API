@@ -1,0 +1,22 @@
+{
+  "name": "tastedive-api",
+  "version": "1.0.0",
+  "description": "Simple Cypress project on Tastedive API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:register": "cypress run -s 'cypress/integration/search.feature'"
+  },
+  "keywords": [],
+  "author": "Romain SEITE",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^6.9.1",
+    "cypress-cucumber-preprocessor": "^4.0.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
