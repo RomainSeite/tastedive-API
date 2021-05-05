@@ -1,11 +1,13 @@
 # tastedive-API
-Simple project using Tastedive API with Cypress personnalized commands and json files using cucumber preprocessor
+Simple project using Tastedive API with Cypress personnalized commands and json files
 
 # HOW TO:
 
-Write your tastes in **examples** in cypress/integration/search.feature, then what type you want to find for every taste : band, game, podcast..
-This will create a folder **results** in the root of the project with a file for every search, containing the results.
-This will write up to 70 results for every search, since the limit parameter of the API is limited at 70.
-It is possible to change the default parameter **Infos** to 1 to get more info about every result (always at 0 for now)
+```bash
+git clone https://github.com/RomainSeite/tastedive-API
+```
+```bash
+npm install
+```
 
-Limit, Infos and API key parameters can't be changed for every request but you can do it in the code.
+You are prompted what you like when opening the test, then it will send a request for every item in the json to the API and write a file with the results at the root of the project, and then do it for your prompt. It uses my API key and yields the maximum of results for every request : 70.
