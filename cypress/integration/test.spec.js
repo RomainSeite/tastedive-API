@@ -1,5 +1,6 @@
 describe('Test API avec Tastedive', () => {
-    let usertaste = window.prompt("What do you like ?"," ");
+    //uncomment the line below to be prompted what you like
+    //let usertaste = window.prompt("What do you like ?"," ");
     it('envoie une requête et traite la réponse', () => {
         cy.fixture('tastes')
             .then(tastes => {
